@@ -1,0 +1,40 @@
+.scrolldown__word {
+  display: none;
+}
+@media screen and (max-width: 980px) {
+  .lines {
+    height: 100px;
+
+    position: relative;
+  }
+  .line {
+    height: 50px;
+    width: 1px;
+    border: 1px solid gray;
+    opacity: 0.5;
+    position: relative;
+    left: 50%;
+    position: absolute;
+    bottom: 0px;
+  }
+  .line-2 {
+    /* transform: translateY(50px); */
+    /* height: 0; */
+    border: 1px solid black;
+    animation: scrollDown 2s linear infinite;
+  }
+  .scrolldown__word {
+    display: block;
+    margin-top: 20px;
+  }
+}
+@keyframes scrollDown {
+  from {
+    height: 100px;
+    opacity: 0;
+  }
+  to {
+    height: 10px;
+    opacity: 1;
+  }
+}

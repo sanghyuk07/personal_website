@@ -4,6 +4,7 @@
 @import "variables.css";
 @import "about.css";
 @import "marketingTool.css";
+@import "scrolldown.css";
 
 * {
   font-family: "Ubuntu", sans-serif;
@@ -110,18 +111,21 @@
   color: #fff;
 }
 #home .content h1::after {
-  content: "Traveler";
+  content: "Sang";
   animation: textanim 10s linear infinite;
 }
 @keyframes textanim {
-  25% {
-    content: "marketer";
+  20% {
+    content: "Marketer";
   }
-  50% {
+  40% {
     content: "Developer Beginner";
   }
-  75% {
+  60% {
     content: "Wiriter";
+  }
+  80% {
+    content: "Traveler";
   }
 }
 .sm a {
