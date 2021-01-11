@@ -5,11 +5,26 @@
 @import "about.css";
 @import "marketingTool.css";
 @import "scrolldown.css";
+@import "contact_me.css";
+@import "footer.css";
 
 * {
   font-family: "Ubuntu", sans-serif;
   box-sizing: border-box;
   /*  border-box로 지정하면  테두리를 포함한 크기를 지정할 수 있기 때문에 예측하기가 더 쉽습니다 */
+}
+html {
+  scroll-behavior: smooth;
+}
+::selection {
+  background-color: #48dbfb;
+}
+::-webkit-scrollbar {
+  width: 10;
+  background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #353b48;
 }
 .navbar {
   position: fixed;
@@ -176,7 +191,7 @@
   }
   .navbar__menu a {
     display: block;
-    font-size: 30px;
+    font-size: 20px;
     margin: 30px 0;
   }
   .sticky.navbar-menu {

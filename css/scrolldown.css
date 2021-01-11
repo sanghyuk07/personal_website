@@ -26,6 +26,7 @@
   .scrolldown__word {
     display: block;
     margin-top: 20px;
+    color: #fff;
   }
 }
 @keyframes scrollDown {

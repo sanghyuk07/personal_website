@@ -114,8 +114,10 @@ section {
   }
   .about-pic {
     margin: 0 auto 60px;
+
     /* auto는 가로 중앙에 배치한다는 뜻이다. 그리고 자연스럽게 좌우 여백은 균등하게 배분된다 */
   }
+
   .about-text {
     flex: 100%;
     text-align: center;

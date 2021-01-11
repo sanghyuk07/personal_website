@@ -1,0 +1,97 @@
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+.contact-info .item {
+  width: calc(50% - 20px);
+  height: 160px;
+  background-color: #353b48;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+
+  /* transition: 3s linear; */
+}
+.contact-info i {
+  display: block;
+  font-size: 40px;
+  line-height: 120px;
+  height: 100px;
+  /* text-align: center;
+  box-sizing: border-box; */
+  /* iline-height:는 줄 높이를 정하는 속성입니다.글자가 40px ,line-heigth =1.5em=60px 글자 위 아래 가각 10px의 여백이 생긴다  */
+}
+.contact-info .item:hover {
+  background-color: #48dbfb;
+}
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  background-color: #353b48;
+  border: none;
+  outline: none;
+  padding: 20px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.name,
+.email {
+  max-width: calc(50% - 10px);
+}
+
+.message {
+  min-height: 200px;
+
+  resize: vertical; /* 상하만 사이즈 이동 가능 */
+}
+
+.contact-form .btn {
+  width: 180px;
+  background-color: transparent;
+  /* transparent 배경색이 없다 */
+  color: #48dbfb;
+  font-size: 16px;
+  border: 2px solid #48dbfb;
+  padding: 0;
+  margin-left: auto;
+
+  /* 사용한 레이아웃 모드에 따라 가로축 미사용 공간 너비의 일부를 바깥 여백에 할당 */
+  cursor: pointer;
+}
+.contact-form .btn:hover {
+  background-color: #48dbfb;
+  color: #fff;
+}
+
+@media screen and (max-width: 980px) {
+  .contact-info .item {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .inner-width {
+    padding: 0 20px;
+  }
+  .skill {
+    width: 100%;
+  }
+  .service {
+    width: 100%;
+  }
+  .name,
+  .email {
+    max-width: 100%;
+  }
+}

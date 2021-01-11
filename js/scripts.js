@@ -9,15 +9,24 @@ const menu_3 =document.querySelector(".menu_3")
 const menu_4 =document.querySelector(".menu_4")
 const menu_5 =document.querySelector(".menu_5")
 
+const goTop =document.querySelector(".goTop");
 
 
+function FadeIn(){
+    goTop.document.querySelector()
+}
 function Scrolled(){
-    if(document.body.scrollTop > 5 || document.documentElement.scrollTop >5){
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop >20){
         navbar.classList.toggle('sticky');
+    
     }
     else{
         navbar.classList.remove('sticky');
     }
+}
+
+function ScrollUp(){
+    scroll(0,0);
 }
 function Display(){
     menu__toggler.classList.toggle('active');
@@ -39,6 +48,7 @@ function init(){
     menu_3.addEventListener("click",NonDisplay);
     menu_4.addEventListener("click",NonDisplay);
     menu_5.addEventListener("click",NonDisplay);
+    goTop.addEventListener("click",ScrollUp);
 
 }
 init();
