@@ -91,6 +91,8 @@ html {
 .sticky {
   background-color: #fff;
   padding: 18px 0;
+  border-radius: 0px 0px 24px 24px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 9px 0px;
 }
 /* .sticky .logo {
   background-image: url(../background/sangLogo_2.png);
@@ -131,16 +133,16 @@ html {
 }
 @keyframes textanim {
   20% {
-    content: "Marketer";
+    content: "a Marketer";
   }
   40% {
-    content: "Developer Beginner";
+    content: "a Developer Beginner";
   }
   60% {
-    content: "Wiriter";
+    content: "a Writer";
   }
   80% {
-    content: "Traveler";
+    content: "a Traveler";
   }
 }
 .sm a {

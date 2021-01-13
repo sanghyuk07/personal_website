@@ -12,22 +12,30 @@ const menu_5 =document.querySelector(".menu_5")
 const goTop =document.querySelector(".goTop");
 
 
-function FadeIn(){
-    goTop.document.querySelector()
-}
-function Scrolled(){
-    if(document.body.scrollTop > 20 || document.documentElement.scrollTop >20){
-        navbar.classList.toggle('sticky');
-    
+window.onscroll = function sticky(){
+    if(window.pageYOffset > 20){
+        navbar.classList.add("sticky");
+
     }
     else{
-        navbar.classList.remove('sticky');
+        navbar.classList.remove("sticky");
     }
 }
+// function Scrolled(){
+//     if(document.body.scrollTop > 20 || document.documentElement.scrollTop >20){
+//         navbar.classList.toggle('sticky');
+    
+//     }
+//     else{
+//         navbar.classList.remove('sticky');
+//     }
+// }
 
 function ScrollUp(){
     scroll(0,0);
 }
+
+
 function Display(){
     menu__toggler.classList.toggle('active');
     navbar__menu.classList.toggle('active');
@@ -40,8 +48,8 @@ function NonDisplay(){
 }
 
 function init(){
-    Scrolled()
-    window.onscroll = function() {Scrolled()};
+    // Scrolled()
+    // window.onscroll = function() {sticky()};
     menu__toggler.addEventListener("click", Display);
     menu.addEventListener("click",NonDisplay);
     menu_2.addEventListener("click",NonDisplay);
