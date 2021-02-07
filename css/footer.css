@@ -1,5 +1,6 @@
 footer {
-  background: url(../background/6.jpg) no-repeat center;
+  /* background: url(../background/6.jpg) no-repeat center; */
+  background-color: #353b48;
   color: #fff;
   padding: 80px 0;
   text-align: center;

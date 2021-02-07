@@ -108,6 +108,9 @@ section {
 .pyhton::after {
   width: 80%;
 }
+.nodejs::after {
+  width: 40%;
+}
 @media screen and (max-width: 980px) {
   .inner-width {
     max-width: 800px;

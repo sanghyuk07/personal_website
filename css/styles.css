@@ -106,7 +106,8 @@ html {
 #home {
   height: 100vh;
   min-height: 500px;
-  background: url(../background/6.jpg) no-repeat center;
+  /* background: url(../background/6.jpg) no-repeat center; */
+  background-color: #353b48;
   background-size: cover;
   background-attachment: fixed;
   opacity: 0.9;
