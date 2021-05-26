@@ -7,6 +7,7 @@ const menu_2 = document.querySelector(".menu_2");
 const menu_3 = document.querySelector(".menu_3");
 const menu_4 = document.querySelector(".menu_4");
 const menu_5 = document.querySelector(".menu_5");
+const emailContact = document.getElementById("contact-by-email");
 
 const goTop = document.querySelector(".goTop");
 
@@ -18,19 +19,25 @@ window.onscroll = function sticky() {
   }
 };
 
+function easeOutCubic (t) {
+  return t + 2;
+}
 
-// function Scrolled(){
-//     if(document.body.scrollTop > 20 || document.documentElement.scrollTop >20){
-//         navbar.classList.toggle('sticky');
+function ScrollUp (yPos, duration = 400)  {
+  const startY = window.scrollY;
+  const difference = yPos - startY;
+  const startTime = performance.now();
 
-//     }
-//     else{
-//         navbar.classList.remove('sticky');
-//     }
-// }
+  const step = () => {
+    const progress = (performance.now() - startTime) / duration;
+    const amount = easeOutCubic(progress);
+    window.scrollTo({ top: startY + amount * difference });
+    if (progress < 0.99) {
+      window.requestAnimationFrame(step);
+    }
+  };
 
-function ScrollUp() {
-  scroll(0, 0);
+  step();
 }
 
 function Display() {    
@@ -45,8 +52,15 @@ function NonDisplay() {
   menu__toggler.classList.toggle("active");
  
 
-  }
-  
+}
+function sendEmail(e){
+  e.preventDefault()
+  var mailTo = 'mailto:tkdgur933@gmail.com?'
+  var subject = 'subject=' + document.getElementById('subject').value
+  var body ='&body=' + document.getElementById('body').value
+  var name = document.getElementById('name').value
+  window.location.href = mailTo + subject +body + '\n'+name
+}
 
 
 function init() {
@@ -59,5 +73,6 @@ function init() {
   menu_4.addEventListener("click", NonDisplay);
   menu_5.addEventListener("click", NonDisplay);
   goTop.addEventListener("click", ScrollUp);
+  emailContact.addEventListener('click', sendEmail)
 }
 init();
