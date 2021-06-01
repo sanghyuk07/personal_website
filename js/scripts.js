@@ -8,6 +8,7 @@ const menu_3 = document.querySelector(".menu_3");
 const menu_4 = document.querySelector(".menu_4");
 const menu_5 = document.querySelector(".menu_5");
 const emailContact = document.getElementById("contact-by-email");
+const emailContact2 = document.getElementById("contact-by-email2");
 const goTop = document.querySelector(".goTop");
 
 window.onscroll = function sticky() {
@@ -48,6 +49,8 @@ function init() {
   menu_4.addEventListener("click", NonDisplay);
   menu_5.addEventListener("click", NonDisplay);
   goTop.addEventListener("click", ScrollUp);
-  emailContact.addEventListener('click', sendEmail)
+  emailContact.addEventListener('click', sendEmail);
+  emailContact2.addEventListener('click', sendEmail);
+
 }
 init();
