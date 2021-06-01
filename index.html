@@ -1,289 +1,254 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta property=”og:title” content=”sang_website”>
-        <meta property="og:image" content="background/sangLogo.jpg">
-        <meta property=”og:image:width” content="800"/>
-        <meta property=”og:image:height” content="400"/> 
-        <meta property=”og:site_name” content=”sang_profile”/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="sang_website">
+    <meta property="og:image" content="background/sangLogo.jpg">
+    <meta property="og:image:width" content="800"/>
+    <meta property="og:image:height" content="400"/>
+    <meta property="og:site_name" content="sang_profile"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@1.0.0/dist/es5/seamless.js"></script>
+    <script>
+      // patch all methods
+      console.log(seamless)
+      seamless.polyfill();
+      // or use specific methods
 
-        <title>Home</title>
-    </head>
-    <body>
-        <!-- navbar -->
-        <nav class ="navbar">
-            <div class="inner-width">
-                <a href ="#home" class ="logo">Sang's story</a>
-                <button class ="menu-toggler">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <div class ="navbar__menu">
-                    <a class ="menu" href="#home">Home</a>
-                    <a class ="menu_2" href="#about">About</a>
-                    <!-- <a href="#skills">Skill</a> -->
-                    <a class ="menu_3" href="#services">Tools available</a>
-                    <a class ="menu_4" href="#">Hobby</a>
-                    <a class ="menu_5" href="#contact">Contact</a>
-                </div>
-                    
+    </script>
+    <noscript>
+        자바 스크립트를 활성화 해주세요!
+    </noscript>
+    <title>Home</title>
+</head>
+<body>
+<!-- navbar -->
+<nav class ="navbar">
+    <div class="inner-width">
+        <a href ="#home" class ="logo">Sang's story</a>
+        <button class ="menu-toggler">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class ="navbar__menu">
+            <a class ="menu" href="#home">Home</a>
+            <a class ="menu_2" href="#about">About</a>
+            <!-- <a href="#skills">Skill</a> -->
+            <a class ="menu_3" href="#services">Tools available</a>
+            <a class ="menu_4" href="#">Hobby</a>
+            <a class ="menu_5" href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+<!-- Home -->
+<section id="home">
+    <div class ="inner-width">
+        <div class="content">
+            <h1>Hi I'm </h1>
+            <div class="sm">
+                <a href="https://www.facebook.com/profile.php?id=100009534373759" class ="fab fa-facebook"></a>
+                <a href="https://www.instagram.com/hyukhihi/" class ="fab fa-instagram"></a>
+                <a href="https://brunch.co.kr/@hyukhihi/21" class ="fas fa-blog"></a>
+                <a href="https://m.blog.naver.com/talktalktv/221391244392" class ="fas fa-microphone"></a>
             </div>
-        </nav>
-        <!-- Home -->
-        <section id="home">
-            <div class ="inner-width">
-                <div class="content">
-                    <h1>Hi I'm </h1>
-                    <div class="sm">
-                        <a href="https://www.facebook.com/profile.php?id=100009534373759" class ="fab fa-facebook"></a>
-                        <a href="https://www.instagram.com/hyukhihi/" class ="fab fa-instagram"></a>
-                        <a href="https://brunch.co.kr/@hyukhihi/21" class ="fas fa-blog"></a>
-                        <a href="https://m.blog.naver.com/talktalktv/221391244392" class ="fas fa-microphone"></a>
-                    </div>
-                    <div class ="buttons">
-                        <a href="#contact">Contact me</a>
-                        <a href="#">Download CV</a>
-<!-- 스크롤 다운 -->
-                        <div class="scrolldown js-scroll-down">
-                            <div class="scrolldown__content">
-                                <div class ="lines">
-                                    <div class="line"></div>
-                                    <div class="line line-2"></div>
-                                </div>
-                            </div>
-                            <div class="scrolldown__word">Scroll Down !</div>
+            <div class ="buttons">
+                <a href="#contact">Contact me</a>
+                <a href="#">Download CV</a>
+                <!-- 스크롤 다운 -->
+                <div class="scrolldown js-scroll-down">
+                    <div class="scrolldown__content">
+                        <div class ="lines">
+                            <div class="line"></div>
+                            <div class="line line-2"></div>
                         </div>
-
                     </div>
-                </div>
-            </div>
- <!-- <i class="fas fa-long-arrow-alt-down"></i> -->
-
-        </section>
-
-        <!-- About -->
-        <section id="about">
-            <div class ="inner-width">
-                <h1 class="section-title">About</h1>
-                <div class="about-contetn">
-                    <img src="background/sangLogo_2.png" alt="" class="about-pic">
-                    <div class="about-text">
-                        <h2>개발하는 마케터</h2>
-                        <h3>
-                            <span>Performance Marketer</span>
-                            <span>Developer Beginner</span>
-                        </h3>
-                        <p>
-                            사람들의 이야기에 관심이 많은 2년차 개발하는 마케터입니다. 
-                          
-                            <br>
-                            <br>
-                            <!-- 신문방송학과와 it학과를 복수 전공했습니다. 
-                            브랜딩에 관심이 많으며, 좋아하는 브랜드는 파타고니아, 프릳츠, 나이키 등이 있습니다. 또한 -->
-                            픽셀 삽입, 이벤트 추적, 리타겟팅, 데이터 추출 등에 익숙하며, 개발 공부도 틈틈히 하고 있습니다.
-                            마케터는 유저의 액션에 가장 예민하게 반응해야 하는 포지션입니다. 광고가 아니라 서비스에 문제가 있다고 판단될 땐 
-                            주저 없이 기획에 참여해서 서비스 개선에 앞장서는 마케터입니다. 
-                            유저 입장에서 생각하는 것을 좋아하며, 더 좋은 방향을 위해 동료들과 끊임없이 소통합니다. 
-                            <br>
-                            <br>
-                            개발자와 비개발자의 영역을 넘나들면서 소통을 할 수 있는 사람.
-                            제가 꿈꾸는 이상적인 마케터의 모습입니다. 
-                        </p>
-                    </div>
-                </div>
-                <div class="skills">
-                    <div class ="skill">
-                        <div class="skill-info">
-                            <span>Html</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar html"></div>
-                    </div>
-             
-
-        
-                    <div class ="skill">
-                        <div class="skill-info">
-                            <span>Css</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill-bar css"></div>
-                    </div>
-                
-
-                
-                    <div class ="skill">
-                        <div class="skill-info">
-                            <span>Javascipt</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="skill-bar javascipt"></div>
-                    </div>
-                
-
-            
-                    <div class ="skill">
-                        <div class="skill-info">
-                            <span>MySql</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar mysql"></div>
-                    </div>
-                
-
-                
-                    <div class ="skill">
-                        <div class="skill-info">
-                            <span>Python</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar pyhton"></div>
-                    </div>
-
-                    <div class ="skill">
-                        <div class="skill-info">
-                            <span>Node JS</span>
-                            <span>40%</span>
-                        </div>
-                        <div class="skill-bar nodejs"></div>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-        <!-- project -->
-        <section id="services" class='dark'>
-            <div class="inner-width">
-                <h1 class="section-title">Marketing Tool</h1>
-                <div class ="services">
-                    <div class="service">
-                        <i class="icon fab fa-facebook-f"></i>
-                        <h4>Facebook</h4>
-                        <p>페이스북 광고 관리 및 유저 리타겟팅</p>
-                    </div>
-
-                    <div class="service">
-                        <i class="icon fab fa-google"></i>
-                        <h4>Google Ads</h4>
-                        <p>구글 애즈를 활용한 키워드 및 디스플레이 광고 집행</p>
-                    </div>
-
-                    <div class="service">
-                        <i class="icon fas fa-chart-bar"></i>
-                        <h4>Google Analytics</h4>
-                        <p>GA를 활용하여 채널별 어트리뷰션 및 유저 데이터 분석</p>
-                    </div>
-
-                    <div class="service">
-                        <i class="icon fab fa-instagram"></i>
-                        <h4>Instagram</h4>
-                        <p>인스타그램 콘텐츠 Tone & manner 및 광고 집행</p>
-                    </div>
-
-                    <div class="service">
-                        <i class="icon fas fa-database"></i>
-                        <h4>Bigqeury</h4>
-                        <p>빅쿼리 활용하여 크롤링 데이터 저장 및 활용</p>
-                    </div>
-
-                    <div class="service">
-                        <i class="icon fas fa-code-branch"></i>
-                        <h4>Firebase</h4>
-                        <p>앱내 발생하는 유저 행동 데이터 분석</p>
-                    </div>
-
-                    <div class="service">
-                        <i class="icon fas fa-comment"></i>
-                        <h4>Kakao Moment</h4>
-                        <p>카카오 모먼트 광고 집행</p>
-                    </div>
-
-                    
-                    <div class="service">
-                        <i class="icon fas fa-digital-tachograph"></i>
-                        <h4>Data Studio</h4>
-                        <p>데이터 스튜디오를 활용한 데이터 시각화</p>
-                    </div>
-
-                    <div class="service">
-                        <i class="icon fas fa-ad"></i>
-                        <h4>Naver Ads</h4>
-                        <p>네이버 키워드 광고 세팅 및 네이버 광고 API 활용</p>
-                    </div>
+                    <div class="scrolldown__word">Scroll Down !</div>
                 </div>
             </div>
-
-
-        </section>
-
-
-        <!-- contact -->
-        <section id="contact">
-            <div class="inner-width">
-                <h1 class="section-title">Get in touch</h1>
-                <div class="contact-info">
-                    <!-- <div class="item">
-                        <i class="fas fa-mobile-alt"></i>
-                        +82 01-0000-0000
-                    </div> -->
-                    <a href="javascript:void(0)" class="item" id="contact-by-email">
-                        <div>
-                            <i class="fas fa-envelope"></i>
-                                tkdgur933@gmail.com
-                        </div>
-                    </a>
-
-
-                    <div class="item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        seoul, Korea
-                    </div>
-                </div>
-
-                <form action="#" class="contact-form">
-                    <input type="text" class="name" placeholder="이름을 입력하세요." id="name">
-                    <input type="text" class="email" placeholder="이메일을 입력하세요."  id="email" onfocus="this.value='tkdgur933@gmail.com';this.style.color='#fff';" style="color:#353b48">
-                    <input type="text" class="subject" placeholder="제목을 입력하세요." id="subject" onfocus="this.value='[Portfolio 보고 연락드립니다]';this.style.color='#fff';" style="color:#353b48">
-                    <textarea class="message" id="body" placeholder="어떤 의견이나 제안도 환영입니다!"></textarea>
-                    <!-- textarea : 여러 줄의 긴 문장을 입력할 수 있는 양식입니다.-->
-                    <input type="submit" href="#" value="메시지 보내기" class="btn">
-                </form>
+        </div>
+    </div>
+    <!-- <i class="fas fa-long-arrow-alt-down"></i> -->
+</section>
+<!-- About -->
+<section id="about">
+    <div class ="inner-width">
+        <h1 class="section-title">About</h1>
+        <div class="about-contetn">
+            <img src="background/sangLogo_2.png" alt="" class="about-pic">
+            <div class="about-text">
+                <h2>개발하는 마케터</h2>
+                <h3>
+                    <span>Performance Marketer</span>
+                    <span>Developer Beginner</span>
+                </h3>
+                <p>
+                    사람들의 이야기에 관심이 많은 2년차 개발하는 마케터입니다.
+                    <br>
+                    <br>
+                    <!-- 신문방송학과와 it학과를 복수 전공했습니다.
+                    브랜딩에 관심이 많으며, 좋아하는 브랜드는 파타고니아, 프릳츠, 나이키 등이 있습니다. 또한 -->
+                    픽셀 삽입, 이벤트 추적, 리타겟팅, 데이터 추출 등에 익숙하며, 개발 공부도 틈틈히 하고 있습니다.
+                    마케터는 유저의 액션에 가장 예민하게 반응해야 하는 포지션입니다. 광고가 아니라 서비스에 문제가 있다고 판단될 땐
+                    주저 없이 기획에 참여해서 서비스 개선에 앞장서는 마케터입니다.
+                    유저 입장에서 생각하는 것을 좋아하며, 더 좋은 방향을 위해 동료들과 끊임없이 소통합니다.
+                    <br>
+                    <br>
+                    개발자와 비개발자의 영역을 넘나들면서 소통을 할 수 있는 사람.
+                    제가 꿈꾸는 이상적인 마케터의 모습입니다.
+                </p>
             </div>
-
-        </section>
-
-        <!-- Footer -->
-        <footer>
-            <div class="inner-width">
-                <div class="copyright">
-                    &copy; 2021 | Created & Designed By <a href="#">Sang</a>
+        </div>
+        <div class="skills">
+            <div class ="skill">
+                <div class="skill-info">
+                    <span>Html</span>
+                    <span>80%</span>
                 </div>
-                <div class="sm">
-                    <a href="https://www.facebook.com/profile.php?id=100009534373759" class ="fab fa-facebook"></a>
-                    <a href="https://www.instagram.com/hyukhihi/" class ="fab fa-instagram"></a>
-                    <a href="https://brunch.co.kr/@hyukhihi/21" class ="fas fa-blog"></a>
-                    <a href="https://m.blog.naver.com/talktalktv/221391244392" class ="fas fa-microphone"></a>
-                </div>
-
-
+                <div class="skill-bar html"></div>
             </div>
-        </footer>
+            <div class ="skill">
+                <div class="skill-info">
+                    <span>Css</span>
+                    <span>70%</span>
+                </div>
+                <div class="skill-bar css"></div>
+            </div>
+            <div class ="skill">
+                <div class="skill-info">
+                    <span>Javascipt</span>
+                    <span>50%</span>
+                </div>
+                <div class="skill-bar javascipt"></div>
+            </div>
+            <div class ="skill">
+                <div class="skill-info">
+                    <span>MySql</span>
+                    <span>90%</span>
+                </div>
+                <div class="skill-bar mysql"></div>
+            </div>
+            <div class ="skill">
+                <div class="skill-info">
+                    <span>Python</span>
+                    <span>80%</span>
+                </div>
+                <div class="skill-bar pyhton"></div>
+            </div>
+            <div class ="skill">
+                <div class="skill-info">
+                    <span>Node JS</span>
+                    <span>40%</span>
+                </div>
+                <div class="skill-bar nodejs"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- project -->
+<section id="services" class='dark'>
+    <div class="inner-width">
+        <h1 class="section-title">Marketing Tool</h1>
+        <div class ="services">
+            <div class="service">
+                <i class="icon fab fa-facebook-f"></i>
+                <h4>Facebook</h4>
+                <p>페이스북 광고 관리 및 유저 리타겟팅</p>
+            </div>
+            <div class="service">
+                <i class="icon fab fa-google"></i>
+                <h4>Google Ads</h4>
+                <p>구글 애즈를 활용한 키워드 및 디스플레이 광고 집행</p>
+            </div>
+            <div class="service">
+                <i class="icon fas fa-chart-bar"></i>
+                <h4>Google Analytics</h4>
+                <p>GA를 활용하여 채널별 어트리뷰션 및 유저 데이터 분석</p>
+            </div>
+            <div class="service">
+                <i class="icon fab fa-instagram"></i>
+                <h4>Instagram</h4>
+                <p>인스타그램 콘텐츠 Tone & manner 및 광고 집행</p>
+            </div>
+            <div class="service">
+                <i class="icon fas fa-database"></i>
+                <h4>Bigqeury</h4>
+                <p>빅쿼리 활용하여 크롤링 데이터 저장 및 활용</p>
+            </div>
+            <div class="service">
+                <i class="icon fas fa-code-branch"></i>
+                <h4>Firebase</h4>
+                <p>앱내 발생하는 유저 행동 데이터 분석</p>
+            </div>
+            <div class="service">
+                <i class="icon fas fa-comment"></i>
+                <h4>Kakao Moment</h4>
+                <p>카카오 모먼트 광고 집행</p>
+            </div>
+            <div class="service">
+                <i class="icon fas fa-digital-tachograph"></i>
+                <h4>Data Studio</h4>
+                <p>데이터 스튜디오를 활용한 데이터 시각화</p>
+            </div>
+            <div class="service">
+                <i class="icon fas fa-ad"></i>
+                <h4>Naver Ads</h4>
+                <p>네이버 키워드 광고 세팅 및 네이버 광고 API 활용</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- contact -->
+<section id="contact">
+    <div class="inner-width">
+        <h1 class="section-title">Get in touch</h1>
+        <div class="contact-info">
+            <!-- <div class="item">
+                <i class="fas fa-mobile-alt"></i>
+                +82 01-0000-0000
+            </div> -->
+            <a href="javascript:void(0)" class="item" id="contact-by-email">
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    tkdgur933@gmail.com
+                </div>
+            </a>
+            <div class="item">
+                <i class="fas fa-map-marker-alt"></i>
+                seoul, Korea
+            </div>
+        </div>
+        <form action="#" class="contact-form">
+            <input type="text" class="name" placeholder="이름을 입력하세요." id="name">
+            <input type="text" class="email" placeholder="이메일을 입력하세요."  id="email" onfocus="this.value='tkdgur933@gmail.com';this.style.color='#fff';" style="color:#353b48">
+            <input type="text" class="subject" placeholder="제목을 입력하세요." id="subject" onfocus="this.value='[Portfolio 보고 연락드립니다]';this.style.color='#fff';" style="color:#353b48">
+            <textarea class="message" id="body" placeholder="어떤 의견이나 제안도 환영입니다!"></textarea>
+            <!-- textarea : 여러 줄의 긴 문장을 입력할 수 있는 양식입니다.-->
+            <input type="submit" href="#" value="메시지 보내기" class="btn">
+        </form>
+    </div>
+</section>
+<!-- Footer -->
+<footer>
+    <div class="inner-width">
+        <div class="copyright">
+            &copy; 2021 | Created & Designed By <a href="#">Sang</a>
+        </div>
+        <div class="sm">
+            <a href="https://www.facebook.com/profile.php?id=100009534373759" class ="fab fa-facebook"></a>
+            <a href="https://www.instagram.com/hyukhihi/" class ="fab fa-instagram"></a>
+            <a href="https://brunch.co.kr/@hyukhihi/21" class ="fas fa-blog"></a>
+            <a href="https://m.blog.naver.com/talktalktv/221391244392" class ="fas fa-microphone"></a>
+        </div>
+    </div>
+</footer>
 <!-- Go Top btn -->
-        <button class="goTop fas fa-arrow-up"></button>
+<button class="goTop fas fa-arrow-up"></button>
+<script src="js/scripts.js"></script>
+<script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
 
-
-
-
-    </body>
-
-    <script src="js/scripts.js"></script>
-    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
-    
 </html>

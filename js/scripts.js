@@ -8,7 +8,6 @@ const menu_3 = document.querySelector(".menu_3");
 const menu_4 = document.querySelector(".menu_4");
 const menu_5 = document.querySelector(".menu_5");
 const emailContact = document.getElementById("contact-by-email");
-
 const goTop = document.querySelector(".goTop");
 
 window.onscroll = function sticky() {
@@ -19,39 +18,17 @@ window.onscroll = function sticky() {
   }
 };
 
-function easeOutCubic (t) {
-  return t + 2;
+function ScrollUp ()  {
+  window.scrollTo({ behavior: "smooth", top: 10, left: 0 });
 }
-
-function ScrollUp (yPos, duration = 400)  {
-  const startY = window.scrollY;
-  const difference = yPos - startY;
-  const startTime = performance.now();
-
-  const step = () => {
-    const progress = (performance.now() - startTime) / duration;
-    const amount = easeOutCubic(progress);
-    window.scrollTo({ top: startY + amount * difference });
-    if (progress < 0.99) {
-      window.requestAnimationFrame(step);
-    }
-  };
-
-  step();
-}
-
-function Display() {    
-
+function Display() {
   menu__toggler.classList.toggle("active");
   navbar__menu.classList.toggle("active");
   navbar.classList.remove("sticky");
- 
 }
 function NonDisplay() {
   navbar__menu.classList.remove("active");
   menu__toggler.classList.toggle("active");
- 
-
 }
 function sendEmail(e){
   e.preventDefault()
@@ -61,8 +38,6 @@ function sendEmail(e){
   var name = document.getElementById('name').value
   window.location.href = mailTo + subject +body + '\n'+name
 }
-
-
 function init() {
   // Scrolled()
   // window.onscroll = function() {sticky()};
